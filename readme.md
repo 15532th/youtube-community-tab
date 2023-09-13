@@ -2,13 +2,33 @@
 
 This repo includes a fork of [bot-jonas/youtube-community-tab](https://github.com/bot-jonas/youtube-community-tab), as well as a script to scrape and dump community tab posts as .json files, along with all attached images and thumbnails.
 
+
 ## Setup / Update
 
-Since this version of the youtube-community-tab package is slightly modified, you will need to install/update it from this repo to guarantee compatibility.
+Since this version of the youtube-community-tab package is slightly modified, you will need to use version from this repo to guarantee compatibility.
+
+### Setup
+
+Make sure python 3.7 or higher is installed.
+Clone this repo or download it as zip archive and unpack to desired location.
+Install dependencies:
+
 ```sh
-cd youtube-community-tab
-pip install .
+pip install -r requirements.txt
 ```
+
+### Updating
+
+Run `git pull` in project directory or download and unpack it the same way as with initial installation.
+
+## Example Usage
+
+```sh
+python ytct.py --cookies cookies-youtube-com.txt -d "./Ninomae Ina_nis Ch. hololive-EN" https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg/community
+OR
+./ytct.py --cookies cookies-youtube-com.txt -d "./Ninomae Ina_nis Ch. hololive-EN" https://www.youtube.com/@NinomaeInanis/community
+```
+
 
 ## Example Usage
 
